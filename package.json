@@ -1,6 +1,6 @@
 {
   "name": "@natsuneko-laboratory/remark-text-decoration",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "remark plugin to decorate text with markdown",
   "license": "MIT",
   "author": "Natsune Mochizuki <me@natsuneko.cat> (https://natsuneko.cat)",
@@ -13,6 +13,7 @@
     }
   },
   "main": "dist/main.cjs.js",
+  "types": "dist/index.d.ts",
   "files": [
     "./dist"
   ],

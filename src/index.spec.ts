@@ -69,6 +69,7 @@ describe("within a markdown content", () => {
       .use(RemarkTextDecoration, {
         marker: "++",
         markerWithOptions: "+",
+        markedAcceptedOptionsPattern: ".*",
         markerClassNames: () => undefined,
         markerProperties(options) {
           return options ? { color: options } : undefined;
@@ -107,7 +108,7 @@ describe("within a markdown content", () => {
       const input = dedent`
   # Hello, World
 
-  This is a +a+marked++ content.
+  This is a +color:red+marked++ content.
   This is a **+b+marked content with bold++**.
       `;
 
