@@ -1,0 +1,56 @@
+{
+  "name": "@natsuneko-laboratory/remark-text-decoration",
+  "version": "0.1.0",
+  "description": "remark plugin to decorate text with markdown",
+  "license": "MIT",
+  "author": "Natsune Mochizuki <me@natsuneko.cat> (https://natsuneko.cat)",
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./dist/main.es.js",
+      "require": "./dist/main.cjs.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "main": "dist/main.cjs.js",
+  "files": [
+    "./dist"
+  ],
+  "scripts": {
+    "build": "vite build && tsc",
+    "test": "vitest"
+  },
+  "sideEffects": false,
+  "dependencies": {
+    "unist-builder": "^4.0.0",
+    "unist-util-visit": "^5.0.0"
+  },
+  "devDependencies": {
+    "@types/mdast": "^4.0.1",
+    "@typescript-eslint/eslint-plugin": "^6.7.4",
+    "@typescript-eslint/parser": "^6.7.4",
+    "dedent": "^1.5.1",
+    "eslint": "^8.51.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-airbnb-typescript-base": "^4.0.2",
+    "eslint-config-prettier": "^9.0.0",
+    "mdast": "^3.0.0",
+    "prettier": "^3.0.3",
+    "rehype-format": "^5.0.0",
+    "rehype-stringify": "^10.0.0",
+    "remark-parse": "^11.0.0",
+    "remark-rehype": "^11.0.0",
+    "typescript": "^5.2.2",
+    "unified": "^11.0.3",
+    "vfile": "^6.0.1",
+    "vite": "^4.4.11",
+    "vitest": "^0.34.6"
+  },
+  "keywords": [],
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
