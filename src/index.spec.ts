@@ -108,7 +108,7 @@ describe("within a markdown content", () => {
       const input = dedent`
   # Hello, World
 
-  This is a +color:red+marked++ content.
+  This is a +a+marked++ content.
   This is a **+b+marked content with bold++**.
       `;
 
